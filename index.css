@@ -99,6 +99,9 @@ img
 .card h1
 {
     font-weight: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
     font-size: 30px;
     text-align: left;
 }
