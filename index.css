@@ -1,0 +1,104 @@
+label,
+input,
+a,
+img
+{
+    cursor: pointer;
+}
+
+.hidden-checkbox
+{
+    display: none;
+}
+
+.checkbox-image
+{
+    width: 25px;
+    height: 25px;
+    float: left;
+    background-image: url(pictures/horizontal-view.jpg);
+}
+
+.hidden-checkbox:checked ~ .checkbox-image
+{
+    width: 25px;
+    height: 25px;
+    background-image: url(pictures/grid-view.jpg);
+}
+
+.blog
+{
+    text-align: center;
+}
+
+.hidden-checkbox:checked ~ .blog .card
+{
+    display: block;
+    margin: auto;
+}
+
+.card
+{
+    display: inline-block;
+    width: 500px;
+    height: 800px;
+    margin: 5px;
+    border: 5px solid orange;
+}
+
+.card span
+{
+    display: none;
+}
+
+.hidden-checkbox:checked ~ .blog .card span
+{
+    display: inline;
+}
+
+.card a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.card a:hover
+{
+    text-shadow: 2px 2px 2px gray;
+    color: green;
+    font-weight: bold;
+}
+
+.card img
+{
+    margin-top: 15px;
+    width: 95%;
+    height: 60%;
+    border-radius: 70%;
+}
+
+.card img:active
+{
+    transform: scale(1.4);
+    border-radius: 0%;
+}
+
+.card p
+{
+    overflow: hidden;
+    height: 35%;
+    font-size: 20px;
+    text-align: left;
+}
+
+.card:hover
+{
+    box-shadow: 5px 3px 4px 2px gray;
+}
+
+.card h1
+{
+    font-weight: normal;
+    font-size: 30px;
+    text-align: left;
+}
