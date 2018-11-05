@@ -6,7 +6,15 @@ img
     cursor: pointer;
 }
 
-.hidden-checkbox
+.category:hover
+{
+    color: red;
+    transform: scale(1.4);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hidden-checkbox,
+.card span.only-list-visible
 {
     display: none;
 }
@@ -15,15 +23,15 @@ img
 {
     width: 25px;
     height: 25px;
-    float: left;
-    background-image: url(pictures/horizontal-view.jpg);
+    position: absolute;
+    background-image: url(pictures/horizontal-view.svg);
 }
 
 .hidden-checkbox:checked ~ .checkbox-image
 {
     width: 25px;
     height: 25px;
-    background-image: url(pictures/grid-view.jpg);
+    background-image: url(pictures/grid-view.svg);
 }
 
 .blog
@@ -35,20 +43,16 @@ img
 {
     display: block;
     margin: auto;
+    margin-bottom: 15px;
 }
 
 .card
 {
+    margin: 15px;
     display: inline-block;
     width: 500px;
     height: 800px;
-    margin: 5px;
     border: 5px solid orange;
-}
-
-.card span
-{
-    display: none;
 }
 
 .hidden-checkbox:checked ~ .blog .card span
@@ -83,10 +87,18 @@ img
     border-radius: 0%;
 }
 
+.card img:hover
+{
+    filter: brightness(1.2);
+}
+
 .card p
 {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 0;
     overflow: hidden;
-    height: 35%;
+    height: 28%;
     font-size: 20px;
     text-align: left;
 }
@@ -98,6 +110,7 @@ img
 
 .card h1
 {
+    margin-left: 5%;
     font-weight: normal;
     white-space: nowrap;
     text-overflow: ellipsis;
